@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Equip index{% endblock %}
+
+{% block body %}
+    <h1>Equip - <a href="/">Home</a></h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Categoria</th>
+                <th>Divisio</th>
+                <th>Any Fundacio</th>
+                <th>Partits Jugats</th>
+                <th>Partits Guanyats</th>
+                <th>Partits Empatats</th>
+                <th>Partits Perduts</th>
+                <th>Accions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for equip in equips %}
+            <tr>
+                <td>{{ equip.id }}</td>
+                <td>{{ equip.nom }}</td>
+                <td>{{ equip.categoria }}</td>
+                <td>{{ equip.divisio }}</td>
+                <td>{{ equip.anyFundacio ? equip.anyFundacio|date('Y-m-d') : '' }}</td>
+                <td>{{ equip.partitsJugats }}</td>
+                <td>{{ equip.partitsGuanyats }}</td>
+                <td>{{ equip.partitsEmpatats }}</td>
+                <td>{{ equip.partitsPerduts }}</td>
+                <td>
+                    <a href="{{ path('equip_show', {'id': equip.id}) }}">Mostra</a>
+                    <a href="{{ path('equip_edit', {'id': equip.id}) }}">Edita</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">Llista buida</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('equip_new') }}">Crea un nou Equip</a>
+{% endblock %}

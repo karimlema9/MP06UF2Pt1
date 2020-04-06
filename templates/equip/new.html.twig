@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Equip{% endblock %}
+
+{% block body %}
+    <h1>Crea un nou Equip</h1>
+
+    {{ include('equip/_form.html.twig') }}
+
+    <a href="{{ path('equip_index') }}">Torna a la llista</a>
+{% endblock %}

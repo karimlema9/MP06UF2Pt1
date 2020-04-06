@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Entrenador index{% endblock %}
+
+{% block body %}
+    <h1>Entrenador - <a href="/">Home</a></h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Cognom</th>
+                <th>Primer Entrenador</th>
+                <th>Edat</th>
+                <th>Partits jugats</th>
+                <th>Partits Guanyats</th>
+                <th>Partits Empatats</th>
+                <th>Partits Perduts</th>
+                <th>Accions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entrenador in entrenadors %}
+            <tr>
+                <td>{{ entrenador.id }}</td>
+                <td>{{ entrenador.nom }}</td>
+                <td>{{ entrenador.cognom }}</td>
+                <td>{{ entrenador.primerEntrenador ? 'Yes' : 'No' }}</td>
+                <td>{{ entrenador.edat }}</td>
+                <td>{{ entrenador.partitsJugats }}</td>
+                <td>{{ entrenador.partitsGuanyats }}</td>
+                <td>{{ entrenador.partitsEmpatats }}</td>
+                <td>{{ entrenador.partitsPerduts }}</td>
+                <td>
+                    <a href="{{ path('entrenador_show', {'id': entrenador.id}) }}">Mostara</a>
+                    <a href="{{ path('entrenador_edit', {'id': entrenador.id}) }}">Edita</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="10">Llista buida</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('entrenador_new') }}">Crea un nou Entrenador</a>
+{% endblock %}

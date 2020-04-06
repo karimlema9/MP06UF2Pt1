@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Entrenador{% endblock %}
+
+{% block body %}
+    <h1>Crea un nou Entrenador</h1>
+
+    {{ include('entrenador/_form.html.twig') }}
+
+    <a href="{{ path('entrenador_index') }}">Torna a la llista</a>
+{% endblock %}

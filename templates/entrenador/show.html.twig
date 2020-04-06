@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Entrenador{% endblock %}
+
+{% block body %}
+    <h1>Entrenador</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ entrenador.id }}</td>
+            </tr>
+            <tr>
+                <th>Nom</th>
+                <td>{{ entrenador.nom }}</td>
+            </tr>
+            <tr>
+                <th>Cognom</th>
+                <td>{{ entrenador.cognom }}</td>
+            </tr>
+            <tr>
+                <th>Primer Entrenador</th>
+                <td>{{ entrenador.primerEntrenador ? 'Yes' : 'No' }}</td>
+            </tr>
+            <tr>
+                <th>Edat</th>
+                <td>{{ entrenador.edat }}</td>
+            </tr>
+            <tr>
+                <th>Partits Jugats</th>
+                <td>{{ entrenador.partitsJugats }}</td>
+            </tr>
+            <tr>
+                <th>Partits Guanyats</th>
+                <td>{{ entrenador.partitsGuanyats }}</td>
+            </tr>
+            <tr>
+                <th>Partits Empatats</th>
+                <td>{{ entrenador.partitsEmpatats }}</td>
+            </tr>
+            <tr>
+                <th>Partits Perduts</th>
+                <td>{{ entrenador.partitsPerduts }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('entrenador_index') }}">Torna a la llista</a>
+
+    <a href="{{ path('entrenador_edit', {'id': entrenador.id}) }}">Edita</a>
+
+    {{ include('entrenador/_delete_form.html.twig') }}
+{% endblock %}

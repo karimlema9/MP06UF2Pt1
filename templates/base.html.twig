@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+        <style>
+            span {
+                color: #B0413E;
+            }
+            a {
+                background-color: white;
+                border: 2px solid #4CAF50;
+                color: #4CAF50;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            a:hover {
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            button {
+                background-color: white;
+                border: 2px solid #008CBA;
+                color: #008CBA;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            button:hover {
+                background-color: #008CBA;
+                color: white;
+            }
+
+            .table {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            .table td, .table th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            .table tr:nth-child(even){background-color: #f2f2f2;}
+
+            .table tr:hover {background-color: #ddd;}
+
+            .table th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #4CAF50;
+                color: white;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid #4CAF50;
+                border-radius: 4px;
+            }
+
+            select {
+                width: 100%;
+                height: 150px;
+                padding: 12px 20px;
+                box-sizing: border-box;
+                border: 2px solid #4CAF50;
+                border-radius: 4px;
+                background-color: #f8f8f8;
+                resize: none;
+            }
+        </style>
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>
