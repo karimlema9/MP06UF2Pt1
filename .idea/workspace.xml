@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f8bb1da-4326-4950-8fb7-6b6bddaf1121" name="Default Changelist" comment="" />
+    <list default="true" id="1f8bb1da-4326-4950-8fb7-6b6bddaf1121" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Entrenador.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Entrenador.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +23,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -132,6 +146,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Controller" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -141,6 +156,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -161,6 +177,12 @@
       <workItem from="1585831264181" duration="243000" />
       <workItem from="1586037768988" duration="770000" />
       <workItem from="1586108516641" duration="11446000" />
+      <workItem from="1586255218219" duration="111000" />
+      <workItem from="1586255341356" duration="612000" />
+      <workItem from="1586267278527" duration="2204000" />
+      <workItem from="1586270747452" duration="393000" />
+      <workItem from="1586329965311" duration="2649000" />
+      <workItem from="1586333414230" duration="2975000" />
     </task>
     <servers />
   </component>
@@ -176,6 +198,19 @@
       <screen x="49" y="27" width="2511" height="1053" />
     </state>
     <state x="1677" y="312" width="524" height="482" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/49.27.2511.1053@49.27.2511.1053" timestamp="1585772879002" />
+    <state x="717" y="343" width="477" height="265" key="Github.CreatePullRequestDialog" timestamp="1586336526580">
+      <screen x="0" y="0" width="1920" height="945" />
+    </state>
+    <state x="717" y="343" width="477" height="265" key="Github.CreatePullRequestDialog/0.0.1920.945@0.0.1920.945" timestamp="1586336526580" />
+    <state x="456" y="162" key="SettingsEditor" timestamp="1586255329024">
+      <screen x="0" y="0" width="1920" height="1054" />
+    </state>
+    <state x="456" y="162" key="SettingsEditor/0.0.1920.1054@0.0.1920.1054" timestamp="1586255329024" />
+    <state x="639" y="317" key="com.intellij.ide.util.TipDialog" timestamp="1586333419680">
+      <screen x="0" y="0" width="1920" height="945" />
+    </state>
+    <state x="639" y="354" key="com.intellij.ide.util.TipDialog/0.0.1920.1054@0.0.1920.1054" timestamp="1586255342820" />
+    <state x="639" y="317" key="com.intellij.ide.util.TipDialog/0.0.1920.945@0.0.1920.945" timestamp="1586333419680" />
     <state x="413" y="151" width="683" height="804" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586111626613">
       <screen x="49" y="27" width="2511" height="1053" />
     </state>
@@ -184,5 +219,13 @@
       <screen x="49" y="27" width="2511" height="1053" />
     </state>
     <state x="1359" y="106" width="1018" height="843" key="find.popup/49.27.2511.1053@49.27.2511.1053" timestamp="1586123529916" />
+    <state x="650" y="268" width="612" height="416" key="git4idea.merge.GitPullDialog" timestamp="1586330032452">
+      <screen x="0" y="0" width="1920" height="945" />
+    </state>
+    <state x="650" y="268" width="612" height="416" key="git4idea.merge.GitPullDialog/0.0.1920.945@0.0.1920.945" timestamp="1586330032452" />
+    <state x="623" y="205" width="672" height="678" key="search.everywhere.popup" timestamp="1586271135475">
+      <screen x="0" y="0" width="1920" height="945" />
+    </state>
+    <state x="623" y="205" width="672" height="678" key="search.everywhere.popup/0.0.1920.945@0.0.1920.945" timestamp="1586271135475" />
   </component>
 </project>

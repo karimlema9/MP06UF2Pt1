@@ -162,12 +162,12 @@ class Entrenador
     /**
      * @ORM\ManyToMany(targetEntity="Equip", inversedBy="entrenadors")
      * @ORM\JoinTable(
-     *     name="equip_entrenador",
+     *     name="equips_entrenadors",
      *     joinColumns={
-     *          @ORM\JoinColumn(name="entrenador_id", referencedColumnName="id")
+     *          @ORM\JoinColumn(name="entrenadors_id", referencedColumnName="id")
      *     },
      *     inverseJoinColumns={
-     *          @ORM\JoinColumn(name="equip_id", referencedColumnName="id")
+     *          @ORM\JoinColumn(name="equips_id", referencedColumnName="id")
      *     }
      * )
      */
